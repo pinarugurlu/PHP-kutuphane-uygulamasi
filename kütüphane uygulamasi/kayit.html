@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/css.css" type="text/css">
+    <title>Kayıt Ol </title> 
+</head>
+<body>
+<div class="header">
+  <h3>Ansiklopedi Uygulaması</h3>
+</div>
+<div class="navbar">
+<a href="giris.php" class="right">Giriş</a>
+</div>
+<div class="row">
+  <div class="side">
+    <div class="form">
+        <form action="kayit.php" method="post" enctype="multipart/form-data">
+            <h3>Kayıt Sayfası</h3>
+            <hr>
+            <label>Ad Soyad</label>
+            <input type="text" name="ad_soyad">
+            <br><br>
+            <label>Eposta</label>
+            <input type="text" name="eposta">
+            <br><br>
+            <label>Şifre</label>
+            <input type="password" name="sifre">
+            <br><br>
+            <label>Fotoğraf</label>
+            <input type="file" name="fileToUpload">
+            <br><br>
+            <input type="submit" name="submit" value="Kayıt Ol" style="width: 10%;"><br><br>
+        </form>
+    </div>
+	</div>
+</div>
+<?php include('footer.html');?>
+</body>
+</html>
+
+
+
+
+
